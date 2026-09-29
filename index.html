@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For You ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+     SLIDE 1
+========================== -->
+
+<section class="opening-screen" id="slide1">
+
+    <div class="giant-envelope" id="envelope">
+
+        <div class="envelope-back"></div>
+
+        <div class="letter">
+            <div class="letter-content">
+                <p>For you,</p>
+                <span>with all my love ❤️</span>
+            </div>
+        </div>
+
+        <div class="left-fold"></div>
+        <div class="right-fold"></div>
+
+        <div class="top-flap"></div>
+
+        <div class="seal">
+            ♥
+        </div>
+
+    </div>
+
+    <button
+        class="open-button"
+        id="openButton"
+        type="button"
+        onclick="openEnvelope()">
+        OPEN ME
+        <span>♥</span>
+    </button>
+
+    <div class="edge-heart heart-one">♥</div>
+    <div class="edge-heart heart-two">♥</div>
+    <div class="edge-heart heart-three">♥</div>
+
+    <div class="sparkle sparkle-one">✦</div>
+    <div class="sparkle sparkle-two">✧</div>
+    <div class="sparkle sparkle-three">✦</div>
+
+</section>
+
+<script>
+function openEnvelope() {
+
+    const envelope = document.getElementById("envelope");
+    const openingScreen = document.getElementById("slide1");
+    const slide2 = document.getElementById("slide2");
+
+    envelope.classList.add("open");
+    openingScreen.classList.add("opened");
+
+    setTimeout(function () {
+        if (slide2) {
+            slide2.classList.add("active");
+            slide2.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    }, 1200);
+}
+</script>
+
+<!-- =========================
+         SLIDE 2
+    ========================== -->
+
+    <section class="boyfriend-slide" id="slide2">
+
+        <!-- Decorative elements -->
+
+        <div class="slide-heart heart-left">♥</div>
+        <div class="slide-heart heart-right">♥</div>
+
+        <div class="slide-sparkle sparkle-left">✦</div>
+        <div class="slide-sparkle sparkle-right">✧</div>
+
+
+        <!-- Main heading -->
+
+        <div class="boyfriend-heading">
+
+            <p class="little-heading">
+                A little something for you...
+            </p>
+
+            <h1>
+                HAPPY
+                <span>BOYFRIEND'S DAY</span>
+            </h1>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+
+        <!-- Polaroids -->
+
+        <div class="polaroid polaroid-left">
+
+            <div class="photo-placeholder">
+                <span>YOUR PHOTO</span>
+            </div>
+
+            <p>my favourite person ❤️</p>
+
+        </div>
+
+
+        <div class="polaroid polaroid-right">
+
+            <div class="photo-placeholder">
+                <span>YOUR PHOTO</span>
+            </div>
+
+            <p>my favourite place to be</p>
+
+        </div>
+
+
+        <!-- Bottom message -->
+
+        <p class="slide-message">
+    Today is about celebrating <br>
+    <span>YOU.</span>
+</p>
+
+<button
+    class="slide2-next"
+    id="toSlide3"
+    type="button"
+    onclick="
+        document.getElementById('slide3').classList.add('active');
+        setTimeout(function() {
+            document.getElementById('slide3').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }, 200);
+    ">
+    Continue
+    <span>→</span>
+</button>
+
+    </section>
+
+    <!-- =========================
+     SLIDE 3
+========================== -->
+
+<section class="meaning-slide" id="slide3">
+
+    <div class="meaning-decoration heart-meaning-left">♥</div>
+    <div class="meaning-decoration heart-meaning-right">♥</div>
+
+    <div class="meaning-sparkle sparkle-meaning-one">✦</div>
+    <div class="meaning-sparkle sparkle-meaning-two">✧</div>
+
+    <div class="meaning-content">
+
+        <p class="meaning-small-title">
+            A little piece of my heart
+        </p>
+
+        <h2>
+            What You Mean
+            <span>To Me</span>
+        </h2>
+
+        <div class="meaning-line"></div>
+
+        <div class="meaning-photo">
+    <div class="meaning-photo-placeholder">
+        <span>YOUR COUPLE PHOTO</span>
+    </div>
+</div>
+
+        <div class="meaning-text">
+
+            <p>
+                I don't think I say it enough, but having you in my life
+                means more to me than I could ever put into words.
+            </p>
+
+            <p>
+                You make ordinary days feel special, you make me laugh,
+                and somehow everything feels a little better when you're around.
+            </p>
+
+        </div>
+
+        <p class="meaning-ending">
+            And this is only the beginning... ❤️
+        </p>
+
+        <button
+    class="next-button"
+    id="toSlide4"
+    type="button"
+    onclick="
+        document.getElementById('slide4').classList.add('active');
+        setTimeout(function() {
+            document.getElementById('slide4').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }, 200);
+    ">
+    <span>Continue</span>
+    <b>→</b>
+</button>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     SLIDE 4
+========================== -->
+
+<section class="date-slide" id="slide4">
+
+    <div class="date-heart date-heart-one">♥</div>
+    <div class="date-heart date-heart-two">♥</div>
+    <div class="date-sparkle date-sparkle-one">✦</div>
+    <div class="date-sparkle date-sparkle-two">✧</div>
+
+    <div class="date-card">
+
+        <p class="date-small-title">
+            One very important question...
+        </p>
+
+        <h2>
+            Will You
+            <span>Be My Date?</span>
+        </h2>
+
+        <div class="date-line"></div>
+
+        <p class="date-question">
+            Just you, me & a little bit of magic. ❤️
+        </p>
+
+        <div class="date-buttons">
+
+            <button
+    class="date-yes"
+    id="dateYes"
+    type="button">
+    YES ❤️
+</button>
+
+           <button
+    class="date-no"
+    id="dateNo"
+    type="button">
+    NO
+</button>
+
+        </div>
+
+        <div class="no-message" id="noMessage">
+            Nice try... 😌<br>
+            <span>You can't get away from me.</span>
+        </div>
+
+        <div class="yes-message" id="yesMessage">
+            Awwww 🥹❤️<br>
+            <span>I love you so much!</span>
+
+            <button class="date-continue" id="toSlide5">
+                Our date awaits →
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     SLIDE 5 — OUR VIRTUAL DATE
+===================================================== -->
+
+<section class="virtual-date-v3" id="slide5">
+
+    <!-- NIGHT WINDOW -->
+    <div class="vd3-window">
+
+        <div class="vd3-moon"></div>
+
+        <span>✦</span>
+        <span>✧</span>
+        <span>✦</span>
+        <span>✧</span>
+
+    </div>
+
+
+    <!-- TITLE -->
+
+    <div class="vd3-title">
+
+        <p>A little virtual date...</p>
+
+        <h2>Just You & Me</h2>
+
+    </div>
+
+
+    <!-- FLOOR -->
+
+    <div class="vd3-floor"></div>
+
+
+    <!-- =================================================
+         GIRL'S CHAIR
+    ================================================== -->
+
+    <div class="vd3-chair vd3-girl-chair">
+
+        <div class="vd3-chair-back"></div>
+        <div class="vd3-chair-seat"></div>
+
+        <div class="vd3-chair-leg leg-a"></div>
+        <div class="vd3-chair-leg leg-b"></div>
+        <div class="vd3-chair-leg leg-c"></div>
+        <div class="vd3-chair-leg leg-d"></div>
+
+    </div>
+
+
+    <!-- =================================================
+         BOY'S CHAIR
+    ================================================== -->
+
+    <div class="vd3-chair vd3-boy-chair">
+
+        <div class="vd3-chair-back"></div>
+        <div class="vd3-chair-seat"></div>
+
+        <div class="vd3-chair-leg leg-a"></div>
+        <div class="vd3-chair-leg leg-b"></div>
+        <div class="vd3-chair-leg leg-c"></div>
+        <div class="vd3-chair-leg leg-d"></div>
+
+    </div>
+
+
+    <!-- =====================================================
+     TABLE
+===================================================== -->
+
+<div class="vd3-table">
+
+    <div class="vd3-table-top">
+
+
+        <div class="vd3-plate vd3-plate-left">
+
+    <span
+        class="vd3-served vd3-served-pizza"
+        id="servedPizzaGirl">
+        🍕
+    </span>
+
+    <span
+        class="vd3-served vd3-served-kebab"
+        id="servedKebabGirl">
+        🍢
+    </span>
+
+</div>
+
+
+<div class="vd3-glass vd3-glass-left">
+
+    <span
+        class="vd3-served-wine"
+        id="servedWineGirl">
+        🍷
+    </span>
+
+</div>
+
+
+<div class="vd3-candle">
+    <div class="vd3-flame"></div>
+</div>
+
+
+<div class="vd3-glass vd3-glass-right">
+
+    <span
+        class="vd3-served-wine"
+        id="servedWineBoy">
+        🍷
+    </span>
+
+</div>
+
+
+<div class="vd3-plate vd3-plate-right">
+
+    <span
+        class="vd3-served vd3-served-pizza"
+        id="servedPizzaBoy">
+        🍕
+    </span>
+
+    <span
+        class="vd3-served vd3-served-kebab"
+        id="servedKebabBoy">
+        🍢
+    </span>
+
+</div>
+
+
+        <!-- TABLE FLOWER -->
+        <div class="vd3-table-flower">
+            ♥
+        </div>
+
+    </div>
+
+
+    <!-- TABLE LEG -->
+    <div class="vd3-table-leg"></div>
+
+</div>
+
+
+    <!-- =================================================
+         GIRL
+    ================================================== -->
+
+    <div class="vd3-character vd3-girl">
+
+        <div class="vd3-head-group">
+
+            <div class="vd3-hair"></div>
+
+            <div class="vd3-head">
+
+                <span class="vd3-eye vd3-eye-left"></span>
+                <span class="vd3-eye vd3-eye-right"></span>
+
+                <span class="vd3-mouth"></span>
+
+            </div>
+
+        </div>
+
+
+        <div class="vd3-body"></div>
+
+
+        <div class="vd3-arm vd3-hold-arm">
+
+            <span class="vd3-hand"></span>
+
+        </div>
+
+
+        <div class="vd3-arm vd3-free-arm">
+
+            <span class="vd3-hand"></span>
+
+        </div>
+
+
+        <div class="vd3-leg vd3-left-leg"></div>
+        <div class="vd3-leg vd3-right-leg"></div>
+
+    </div>
+
+
+    <!-- =================================================
+         BOY
+    ================================================== -->
+
+    <div class="vd3-character vd3-boy">
+
+        <div class="vd3-head-group">
+
+            <div class="vd3-hair"></div>
+
+            <div class="vd3-head">
+
+                <span class="vd3-eye vd3-eye-left"></span>
+                <span class="vd3-eye vd3-eye-right"></span>
+
+                <span class="vd3-mouth"></span>
+
+            </div>
+
+        </div>
+
+
+        <div class="vd3-body"></div>
+
+
+        <div class="vd3-arm vd3-hold-arm">
+
+            <span class="vd3-hand"></span>
+
+            <span class="vd3-proposal-rose">
+                🌹
+            </span>
+
+        </div>
+
+
+        <div class="vd3-arm vd3-free-arm">
+
+            <span class="vd3-hand"></span>
+
+        </div>
+
+
+        <div class="vd3-leg vd3-left-leg"></div>
+        <div class="vd3-leg vd3-right-leg"></div>
+
+    </div>
+
+
+    <!-- =================================================
+     FOOD MENU
+================================================== -->
+
+<div class="vd3-food-menu" id="foodMenu">
+
+    <p>
+        What are we having tonight? ❤️
+    </p>
+
+
+    <div class="vd3-food-options">
+
+        <!-- PIZZA -->
+        <button
+            class="vd3-food-choice"
+            data-food="pizza">
+
+            <strong>🍕</strong>
+            <span>Pizza</span>
+
+        </button>
+
+
+        <!-- ALL 3 -->
+        <button
+            class="vd3-food-choice vd3-all-food"
+            data-food="all">
+
+            <strong>🍕🍷🍢</strong>
+            <span>All 3</span>
+
+        </button>
+
+
+        <!-- WINE -->
+        <button
+            class="vd3-food-choice"
+            data-food="wine">
+
+            <strong>🍷</strong>
+            <span>Wine</span>
+
+        </button>
+
+
+        <!-- KEBAB -->
+        <button
+            class="vd3-food-choice"
+            data-food="kebab">
+
+            <strong>🍢</strong>
+            <span>Kebab</span>
+
+        </button>
+
+    </div>
+
+
+    <button
+        class="vd3-serve-button"
+        id="serveFood">
+
+        Serve Dinner ❤️
+
+    </button>
+
+</div>
+
+
+<button
+    class="vd3-dance-button"
+    id="danceButton"
+    type="button">
+    Dance with me ❤️
+</button>
+
+
+</section>
+
+
+<!-- =====================================================
+     SLIDE 6 — PERSONAL MESSAGE
+===================================================== -->
+
+<section class="personal-slide" id="slide6">
+
+    <!-- KISS -->
+
+    <div class="final-kiss">
+        💋
+    </div>
+
+
+    <!-- POPPING HEARTS -->
+
+    <div class="heart-pop heart-pop-1">❤️</div>
+    <div class="heart-pop heart-pop-2">❤️</div>
+    <div class="heart-pop heart-pop-3">❤️</div>
+    <div class="heart-pop heart-pop-4">❤️</div>
+    <div class="heart-pop heart-pop-5">❤️</div>
+    <div class="heart-pop heart-pop-6">❤️</div>
+    <div class="heart-pop heart-pop-7">❤️</div>
+    <div class="heart-pop heart-pop-8">❤️</div>
+    <div class="heart-pop heart-pop-9">❤️</div>
+    <div class="heart-pop heart-pop-10">❤️</div>
+
+
+    <!-- DECORATIONS -->
+
+    <div class="personal-heart personal-heart-one">♥</div>
+    <div class="personal-heart personal-heart-two">♥</div>
+
+    <div class="personal-sparkle personal-sparkle-one">✦</div>
+    <div class="personal-sparkle personal-sparkle-two">✧</div>
+
+
+    <!-- LETTER -->
+
+    <div class="personal-letter">
+
+        <p class="personal-small-title">
+            One last thing...
+        </p>
+
+        <h2>
+            A Letter
+            <span>For You ❤️</span>
+        </h2>
+
+        <div class="personal-line"></div>
+
+
+        <div class="personal-message">
+
+            <p>
+                My love,
+            </p>
+
+            <p>
+                [Write your personal message here...]
+            </p>
+
+            <p>
+                [Add another paragraph here...]
+            </p>
+
+            <p>
+                [And your final words here... ❤️]
+            </p>
+
+        </div>
+
+
+        <div class="personal-signature">
+            Forever yours,
+            <span>❤️</span>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
